@@ -4,7 +4,7 @@ The test can be executed on the same machine where Lean Openwhisk installed or o
 
 ## Test setup
 - A Lean OpenWhisk system is deployed.
-- Test action created created in the Lean Openwhisk, e.g. you may use [`sleepy action`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/sleepy.js)
+- Test action created in the Lean Openwhisk, e.g. you may use [`sleepy action`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/sleepy.js)
 - [`loadtest`](https://www.npmjs.com/package/loadtest) module installed on the machine where test.sh will be executed.
 - (Optional in case OW running on remote machine) SSH password-less access configured (using SSH keys) from machine where test.sh is running to machine where Lean OpenWhisk instance
 
