@@ -1,10 +1,9 @@
 # Performance evaluation for Lean OpenWhisk
 A simple performance test for [`Lean OpenWhisk`](https://github.com/kpavel/incubator-openwhisk/tree/lean) . Determines throughput and end-user latency of the system using loadtest utility.
-The test can be executed on the same machine where Lean Openwhisk installed or on another machine (will require SSH key setup for password-less access)
 
 ## Test setup
-- A Lean OpenWhisk system is deployed.
-- Test action created in the Lean Openwhisk, e.g. you may use [`sleepy action`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/sleepy.js)
+- Lean OpenWhisk is installed (see [`URL`](https://github.com/kpavel/incubator-openwhisk/tree/lean)) 
+- A test action created in the Lean Openwhisk, e.g. you may use [`sleepy action`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/sleepy.js)
 - [`loadtest`](https://www.npmjs.com/package/loadtest) module installed on the machine where test.sh will be executed.
 - (Optional in case OW running on remote machine) SSH password-less access configured (using SSH keys) from machine where test.sh is running to machine where Lean OpenWhisk instance
 
@@ -40,7 +39,7 @@ done
 e.g.
 ./test.sh -u https://192.168.33.18 -t 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP --owhome /home/osboxes/openwhisk --owc-initial 3 --owc-max 5 --payloads "timeout30 timeout30payload100K" --action sleepy --repeats 2
 
-will result in alot of stdout and result file (`results` by default. can be specified as parameter, refer to the usage) containing data like:
+will result in a lot of stdout and result file (`results` by default. can be specified as parameter, refer to the usage) containing data like:
 ```console
 ow concurrency,loadtestconcurrency,latency,rps,errors,requests,totaltime(sec),realtotaltime(msec),payloadfile
 3,3,96.8,31,0,100,3.271948778(sec),3464(msec),timeout30
