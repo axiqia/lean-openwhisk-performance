@@ -89,7 +89,7 @@ tmp=mytemptestfile
 echo $'\n\n'>>${resultfile}
 echo "========================================================">>result
 date>>${resultfile}
-echo -e "ow concurrency,loadtestconcurrency,latency,rps,errors,requests,totaltime(sec),realtotaltime(msec),payloadfile,setup">>${resultfile}
+echo -e "ow concurrency,loadtestconcurrency,latency,rps,errors,requests,totaltime(sec),realtotaltime(msec),payloadfile">>${resultfile}
 date>>resultslog
 
 islocal () {
