@@ -37,7 +37,7 @@ done
 
 
 ### Running the test:
-Consider the following example. The test will vary concurrency of the client and backend from `1` to `5` with step `2` (the default is `1`) running the action `sleepy` with the specified payloads. The second payload is optional. It's here if you want to find out what is the impact of a parameter size on the action invocation. You can experiment with different payloads.
+Consider the following example. The test will vary concurrency of the client and backend from 1 to 5 with step 2 (the default is 1) running the action `sleepy` with the specified payloads. The second payload is optional. It's here if you want to find out what is the impact of a parameter size on the action invocation. You can experiment with different payloads.
 
 ```console
 ./test.sh -u https://192.168.33.18 -t 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP --owhome /home/osboxes/openwhisk --owc-initial 1 --owc-max 5 --payloads "timeout30 timeout30payload100K" --action sleepy --repeats 2 --step 2
