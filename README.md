@@ -1,14 +1,15 @@
 # Performance evaluation for Lean OpenWhisk
-A simple performance test for [`Lean OpenWhisk`](https://github.com/kpavel/incubator-openwhisk/tree/lean) . Determines throughput and end-user latency of the system using loadtest utility.
+This is a simple performance stress test for [`Lean OpenWhisk`](https://github.com/kpavel/incubator-openwhisk/tree/lean). The test determines throughput and end-user latency of the system using the [`loadtest`](https://www.npmjs.com/package/loadtest) module.
 
 ## Test setup
-- Lean OpenWhisk is installed (see [`URL`](https://github.com/kpavel/incubator-openwhisk/tree/lean)) 
-- A test action created in the Lean Openwhisk, e.g. you may use [`sleepy action`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/sleepy.js)
-- [`loadtest`](https://www.npmjs.com/package/loadtest) module installed on the machine where test.sh will be executed.
-- (Optional in case OW running on remote machine) SSH password-less access configured (using SSH keys) from machine where test.sh is running to machine where Lean OpenWhisk instance
+- Lean OpenWhisk should be installed (see [`Lean OpenWhisk`](https://github.com/kpavel/incubator-openwhisk/tree/lean)) 
+- A test action should be created in the Lean Openwhisk, e.g. you may use a sample [`sleepy action`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/sleepy.js)
+- [`loadtest`](https://www.npmjs.com/package/loadtest) module should be installed on the machine where the [`test.sh`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/test.sh) client script will be executed. We recommend that that the client will be executed from a machine different than the one used by Lean OpenWhisk to obtain reliable performance baseline.  
+- Optionally, an [`SSH password-less access`](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/) can be configured from the test client machine to the machine where the Lean OpenWhisk instance runs.
 
 ### Test flow
-Based on input parameters the test iterates over specified payloads, and concurrencies e.g.
+The following code snippet shows the gist of
+[`test.sh`](https://github.com/kpavel/lean-openwhisk-performance/blob/master/test.sh). Based on the input parameters, the test iterates over the specified test configurations, including concurrency of the client and the backend. Each test is replicated a number of times as specified by the repeats parameter to gain statistical significance of the results. It's recommended to replicate each experiment at least 30 times to obtain statistically meaningful results. 
 
 ```shell
 for owc in `seq ${owc_initial_concurrency} $step $maxowconcurrency`
@@ -36,10 +37,15 @@ done
 
 
 ### Running the test:
-e.g.
-./test.sh -u https://192.168.33.18 -t 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP --owhome /home/osboxes/openwhisk --owc-initial 3 --owc-max 5 --payloads "timeout30 timeout30payload100K" --action sleepy --repeats 2
+Consider the following example. The test will vary concurrency of the client and backend from `1` to `5` with step `2` (the default is `1`) running the action `sleepy` with the specified payloads. The second payload is optional. It's here if you want to find out what is the impact of a parameter size on the action invocation. You can experiment with different payloads.
 
-will result in a lot of stdout and result file (`results` by default. can be specified as parameter, refer to the usage) containing data like:
+```console
+./test.sh -u https://192.168.33.18 -t 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP --owhome /home/osboxes/openwhisk --owc-initial 1 --owc-max 5 --payloads "timeout30 timeout30payload100K" --action sleepy --repeats 2 --step 2
+```
+
+
+Running `test.h` will result in some stdout output. The results will be saved in a result file that can be specified as a parameter (the default name is `results` by default. can be specified as parameter, refer to the usage) containing data like:
+
 ```console
 ow concurrency,loadtestconcurrency,latency,rps,errors,requests,totaltime(sec),realtotaltime(msec),payloadfile
 3,3,96.8,31,0,100,3.271948778(sec),3464(msec),timeout30
