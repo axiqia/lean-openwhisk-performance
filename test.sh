@@ -33,14 +33,8 @@ Options:
   
 Example:
 
-
-running "sleepy" action on local OpenWhisk instance (running on localhost) with 2 payload files:
-$(basename $0) -u https://localhost -t 33bc56b1-71f6-4ed5-7c54-816aa4f8c501:224fO3xZCLrMN6b2NKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyHVCGuMDGIwP --owhome /home/osboxes/openwhisk --owc-max 5 --payloads "timeout30payload1K timeout30payload100K" --action sleepy
-
-
-running "sleepy" action on remote OpenWhisk instance running on a host 192.168.33.18 with user osboxes (requires config of password-less ssh access to the 192.168.33.18 using SSH keys)
-$(basename $0) -u https://localhost -t 33bc56b1-71f6-4ed5-7c54-816aa4f8c501:224fO3xZCLrMN6b2NKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyHVCGuMDGIwP --owhome /home/osboxes/openwhisk --owc-max 5 --payloads timeout30payload1K --action sleepy --repeats 3 --user osboxes --ip 192.168.33.18
-
+running sleepy action on local openwhisk with OW concurrency 6 to 12 with single empty payload
+$(basename $0) -u https://172.17.0.1 -t 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP --owhome /home/pi/openwhisk --owc-initial 6 --owc-max 12 --payloads "timeout30" --load-max 30 --step 1 --repeats 1 --action sleepy
 
 EOM
 }
@@ -96,32 +90,39 @@ islocal () {
   [[ -z $user && -z $ip ]] 
 }
 
+ow_concurrency=1
+invoker_user_memory=$((256*${ow_concurrency}))
+echo invoker_user_memory: $invoker_user_memory
+
+ANSIBLE_YML=${ANSIBLE_HOME}/controller.yml
+ANSIBLE_ENV="-e lean=true -e limit_invocations_per_minute=99999 -e limit_invocations_concurrent=99999 -e limit_invocations_concurrent_system=99999 -i ${ANSIBLE_HOME}/environments/local"
+INVOKER_CONTAINER="controller0"
+
 cleanup () {
   echo -e "\n==============\nClean up started\n=============="
   sleep 1
 
   if islocal; then
-    docker rm -f controller-lean
+    docker rm -f ${INVOKER_CONTAINER}
+    docker rm -f nginx
+    sudo chown -R pi:pi /tmp/wskconf/
+    sudo chown -R pi:pi /tmp/wsklogs/ 
   else
-    echo running $user@$ip "docker rm -f controller-lean"
-    ssh $user@$ip "docker rm -f controller-lean"
+    echo running $user@$ip "docker rm -f controller0"
+    ssh $user@$ip "docker rm -f controller0"
   fi
 
   sleep 1 
   echo -e "\n==============\nCleanup finished\n============"
 }
 
-cleanup
-
-if islocal; then
-  /usr/local/bin/ansible-playbook ${ANSIBLE_HOME}/openwhisk-lean.yml -i ${ANSIBLE_HOME}/environments/local -e controller_akka_provider=local
-else
-  ssh $user@$ip "/usr/local/bin/ansible-playbook ${ANSIBLE_HOME}/openwhisk-lean.yml -i ${ANSIBLE_HOME}/environments/local -e controller_akka_provider=local"
-fi
-
-ANSIBLE_YML=${ANSIBLE_HOME}/controller-lean.yml
-ANSIBLE_ENV="-e controller_akka_provider=local"
-INVOKER_CONTAINER="controller-lean"
+#cleanup
+#
+#if islocal; then
+#  /usr/local/bin/ansible-playbook ${ANSIBLE_HOME}/openwhisk.yml ${ANSIBLE_ENV} -e invoker_user_memory=$invoker_user_memory
+#else
+#  ssh $user@$ip "/usr/local/bin/ansible-playbook ${ANSIBLE_HOME}/openwhisk-lean.yml -i ${ANSIBLE_HOME}/environments/local -e controller_akka_provider=local"
+#fi
 
 
 function updateOW {
@@ -136,14 +137,14 @@ function updateOW {
   fi  
   sleep 1
 
-  LIMITS="-e limit_invocations_per_minute=99999 -e limit_invocations_concurrent=99999 -e limit_invocations_concurrent_system=99999"
-  echo -e "Running: /usr/local/bin/ansible-playbook ${ANSIBLE_YML} -e invoker_coreshare=$1 -e invoker_numcore=1 ${LIMITS} ${ANSIBLE_ENV}"
+  invoker_user_memory=$((256*${1}))m
+  echo -e "Running: /usr/local/bin/ansible-playbook ${ANSIBLE_YML} ${ANSIBLE_ENV} -e invoker_user_memory=$invoker_user_memory"
   
-  if islocal; then
-    /usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_coreshare=$1 -e invoker_numcore=1 ${LIMITS} ${ANSIBLE_ENV}
-  else
-    ssh $user@$ip "/usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_coreshare=$1 -e invoker_numcore=1 ${LIMITS} ${ANSIBLE_ENV}"
-  fi
+#  if islocal; then
+  /usr/local/bin/ansible-playbook ${ANSIBLE_YML} ${ANSIBLE_ENV} -e invoker_user_memory=$invoker_user_memory
+#   else
+#     ssh $user@$ip "/usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_coreshare=$1 -e invoker_numcore=1 ${LIMITS} ${ANSIBLE_ENV}"
+#   fi
 
   sleep 15
   echo "OW concurrency updated to $1, warming up with payload $2"
@@ -173,6 +174,7 @@ function runload {
   latency=`cat $tmp|grep "Mean latency"`
   echo $latency
   latency=`echo $latency|cut -d ' ' -f 11`
+
 
   echo -e "result: $owc,$lc,$latency,$rps,$errors,$requests,${totaltime}(sec),${realtotaltime}(msec),$payload"
   result="$owc,$lc,$latency,$rps,$errors,$requests,${totaltime}(sec),${realtotaltime}(msec),$payload"
@@ -208,9 +210,10 @@ do
       do     
         for i in `seq 1 ${repeats}`;
         do
-          runrepeats
-	done
+          runload
+        done
       done
     fi
   done
 done
+
