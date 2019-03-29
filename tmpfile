@@ -1,0 +1,27 @@
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 17:15:37 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 17:15:42 GMT+0800 (CST)] INFO Requests: 7 (14%), requests per second: 1, mean latency: 68.5 ms
+[Fri Mar 29 2019 17:15:47 GMT+0800 (CST)] INFO Requests: 7 (14%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 17:15:52 GMT+0800 (CST)] INFO Requests: 7 (14%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Total errors:        26
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Total time:          19.800978351 s
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Requests per second: 3
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Mean latency:        395.7 ms
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO   50%      3 ms
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO   90%      55 ms
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO   95%      93 ms
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO   99%      18582 ms
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO  100%      18582 ms (longest request)
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO  100%      18582 ms (longest request)
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 17:15:57 GMT+0800 (CST)] INFO   429:   26 errors

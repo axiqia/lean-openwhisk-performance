@@ -1,0 +1,871 @@
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:15:07 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:15:12 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 2, mean latency: 67.5 ms
+[Fri Mar 29 2019 13:15:17 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:15:22 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:15:27 GMT+0800 (CST)] INFO Requests: 33 (66%), requests per second: 4, mean latency: 874.5 ms
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Total time:          20.829615066 s
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Mean latency:        416.3 ms
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO   90%      90 ms
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO   95%      98 ms
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO   99%      18351 ms
+[Fri Mar 29 2019 13:15:28 GMT+0800 (CST)] INFO  100%      18351 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:16:58 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:03 GMT+0800 (CST)] INFO Requests: 6 (12%), requests per second: 1, mean latency: 89.6 ms
+[Fri Mar 29 2019 13:17:08 GMT+0800 (CST)] INFO Requests: 6 (12%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:13 GMT+0800 (CST)] INFO Requests: 6 (12%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:18 GMT+0800 (CST)] INFO Requests: 30 (60%), requests per second: 5, mean latency: 700.6 ms
+[Fri Mar 29 2019 13:17:23 GMT+0800 (CST)] INFO Requests: 30 (60%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:28 GMT+0800 (CST)] INFO Requests: 43 (86%), requests per second: 3, mean latency: 829.4 ms
+[Fri Mar 29 2019 13:17:33 GMT+0800 (CST)] INFO Requests: 43 (86%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:38 GMT+0800 (CST)] INFO Requests: 43 (86%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:43 GMT+0800 (CST)] INFO Requests: 43 (86%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:48 GMT+0800 (CST)] INFO Requests: 43 (86%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:17:53 GMT+0800 (CST)] INFO Requests: 49 (98%), requests per second: 1, mean latency: 4431 ms
+[Fri Mar 29 2019 13:17:58 GMT+0800 (CST)] INFO Requests: 49 (98%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:18:03 GMT+0800 (CST)] INFO Requests: 49 (98%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Total time:          67.25148353 s
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Mean latency:        1344.7 ms
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO   50%      53 ms
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO   90%      266 ms
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO   95%      12515 ms
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO   99%      26010 ms
+[Fri Mar 29 2019 13:18:06 GMT+0800 (CST)] INFO  100%      26010 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:18:26 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:18:31 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 106.8 ms
+[Fri Mar 29 2019 13:18:36 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:18:41 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:18:46 GMT+0800 (CST)] INFO Requests: 10 (20%), requests per second: 1, mean latency: 2787.1 ms
+[Fri Mar 29 2019 13:18:51 GMT+0800 (CST)] INFO Requests: 27 (54%), requests per second: 3, mean latency: 55.3 ms
+[Fri Mar 29 2019 13:18:56 GMT+0800 (CST)] INFO Requests: 27 (54%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:19:01 GMT+0800 (CST)] INFO Requests: 27 (54%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Total time:          37.677593118 s
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Mean latency:        753.2 ms
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO   90%      93 ms
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO   95%      218 ms
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO   99%      19195 ms
+[Fri Mar 29 2019 13:19:04 GMT+0800 (CST)] INFO  100%      19195 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:19:52 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:19:57 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:20:02 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:20:07 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 8, mean latency: 339.4 ms
+[Fri Mar 29 2019 13:20:12 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:20:17 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:20:22 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Total time:          32.670810374 s
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Mean latency:        653.1 ms
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO   90%      87 ms
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO   95%      99 ms
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO   99%      18107 ms
+[Fri Mar 29 2019 13:20:25 GMT+0800 (CST)] INFO  100%      18107 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:20:45 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Total errors:        39
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Total time:          0.660835332 s
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Requests per second: 76
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Mean latency:        13 ms
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO   50%      2 ms
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO   90%      41 ms
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO   95%      50 ms
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO   99%      132 ms
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO  100%      132 ms (longest request)
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO  100%      132 ms (longest request)
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:20:46 GMT+0800 (CST)] INFO   429:   39 errors
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:21:06 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:21:11 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 102.7 ms
+[Fri Mar 29 2019 13:21:16 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:21:21 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:21:26 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 4, mean latency: 894.5 ms
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Total time:          21.004713141 s
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Mean latency:        419.8 ms
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO   90%      49 ms
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO   95%      99 ms
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO   99%      18810 ms
+[Fri Mar 29 2019 13:21:27 GMT+0800 (CST)] INFO  100%      18810 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:21:48 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:21:53 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 192.9 ms
+[Fri Mar 29 2019 13:21:58 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:22:03 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:22:08 GMT+0800 (CST)] INFO Requests: 18 (36%), requests per second: 3, mean latency: 1132.7 ms
+[Fri Mar 29 2019 13:22:13 GMT+0800 (CST)] INFO Requests: 18 (36%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Total time:          29.919774931 s
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Mean latency:        598.1 ms
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO   90%      95 ms
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO   95%      409 ms
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO   99%      16209 ms
+[Fri Mar 29 2019 13:22:18 GMT+0800 (CST)] INFO  100%      16209 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:22:38 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:22:43 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 1, mean latency: 87.9 ms
+[Fri Mar 29 2019 13:22:48 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:22:53 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Total errors:        36
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Total time:          18.150510687 s
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Requests per second: 3
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Mean latency:        362.8 ms
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO   50%      2 ms
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO   90%      57 ms
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO   95%      95 ms
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO   99%      17330 ms
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO  100%      17330 ms (longest request)
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO  100%      17330 ms (longest request)
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:22:56 GMT+0800 (CST)] INFO   429:   36 errors
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:23:16 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:23:21 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 2, mean latency: 123.6 ms
+[Fri Mar 29 2019 13:23:26 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:23:31 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:23:36 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 3, mean latency: 1201.9 ms
+[Fri Mar 29 2019 13:23:41 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Total time:          29.987206802 s
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Mean latency:        599.4 ms
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO   90%      126 ms
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO   95%      609 ms
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO   99%      17102 ms
+[Fri Mar 29 2019 13:23:46 GMT+0800 (CST)] INFO  100%      17102 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:24:07 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:24:12 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 1, mean latency: 119.7 ms
+[Fri Mar 29 2019 13:24:17 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:24:22 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:24:27 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 4, mean latency: 919.9 ms
+[Fri Mar 29 2019 13:24:32 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:24:37 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:24:42 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Total time:          39.366327045999995 s
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Mean latency:        787 ms
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO   90%      128 ms
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO   95%      222 ms
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO   99%      18558 ms
+[Fri Mar 29 2019 13:24:46 GMT+0800 (CST)] INFO  100%      18558 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:25:06 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:11 GMT+0800 (CST)] INFO Requests: 5 (10%), requests per second: 1, mean latency: 83.8 ms
+[Fri Mar 29 2019 13:25:16 GMT+0800 (CST)] INFO Requests: 5 (10%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:21 GMT+0800 (CST)] INFO Requests: 5 (10%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:26 GMT+0800 (CST)] INFO Requests: 27 (54%), requests per second: 4, mean latency: 887.8 ms
+[Fri Mar 29 2019 13:25:31 GMT+0800 (CST)] INFO Requests: 27 (54%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:36 GMT+0800 (CST)] INFO Requests: 27 (54%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:41 GMT+0800 (CST)] INFO Requests: 47 (94%), requests per second: 4, mean latency: 576 ms
+[Fri Mar 29 2019 13:25:46 GMT+0800 (CST)] INFO Requests: 47 (94%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:51 GMT+0800 (CST)] INFO Requests: 47 (94%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:25:56 GMT+0800 (CST)] INFO Requests: 47 (94%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:26:01 GMT+0800 (CST)] INFO Requests: 47 (94%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Total time:          57.089227071 s
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Mean latency:        1141.4 ms
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO   50%      44 ms
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO   90%      129 ms
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO   95%      10490 ms
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO   99%      25506 ms
+[Fri Mar 29 2019 13:26:03 GMT+0800 (CST)] INFO  100%      25506 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:26:24 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:26:29 GMT+0800 (CST)] INFO Requests: 28 (56%), requests per second: 6, mean latency: 55.5 ms
+[Fri Mar 29 2019 13:26:34 GMT+0800 (CST)] INFO Requests: 28 (56%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Total time:          12.613293659 s
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Requests per second: 4
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Mean latency:        252 ms
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO   90%      89 ms
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO   95%      130 ms
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO   99%      9980 ms
+[Fri Mar 29 2019 13:26:36 GMT+0800 (CST)] INFO  100%      9980 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Total errors:        42
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Total time:          0.699802939 s
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Requests per second: 71
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Mean latency:        13.8 ms
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO   50%      2 ms
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO   90%      41 ms
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO   95%      43 ms
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO   99%      227 ms
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO  100%      227 ms (longest request)
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO  100%      227 ms (longest request)
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:26:57 GMT+0800 (CST)] INFO   429:   42 errors
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:27:18 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:27:23 GMT+0800 (CST)] INFO Requests: 8 (16%), requests per second: 2, mean latency: 69.8 ms
+[Fri Mar 29 2019 13:27:28 GMT+0800 (CST)] INFO Requests: 8 (16%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:27:33 GMT+0800 (CST)] INFO Requests: 8 (16%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:27:38 GMT+0800 (CST)] INFO Requests: 44 (88%), requests per second: 7, mean latency: 539.7 ms
+[Fri Mar 29 2019 13:27:43 GMT+0800 (CST)] INFO Requests: 46 (92%), requests per second: 0, mean latency: 56 ms
+[Fri Mar 29 2019 13:27:48 GMT+0800 (CST)] INFO Requests: 46 (92%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:27:53 GMT+0800 (CST)] INFO Requests: 46 (92%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Total time:          37.300037787 s
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Mean latency:        745.6 ms
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO   90%      111 ms
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO   95%      185 ms
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO   99%      17721 ms
+[Fri Mar 29 2019 13:27:55 GMT+0800 (CST)] INFO  100%      17721 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:28:15 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:28:20 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 2, mean latency: 58.7 ms
+[Fri Mar 29 2019 13:28:25 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:28:30 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:28:35 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:28:40 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 3, mean latency: 1441.2 ms
+[Fri Mar 29 2019 13:28:45 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:28:50 GMT+0800 (CST)] INFO Requests: 44 (88%), requests per second: 4, mean latency: 609.7 ms
+[Fri Mar 29 2019 13:28:55 GMT+0800 (CST)] INFO Requests: 44 (88%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:29:00 GMT+0800 (CST)] INFO Requests: 44 (88%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:29:05 GMT+0800 (CST)] INFO Requests: 44 (88%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Total time:          51.333275932999996 s
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Mean latency:        1026.3 ms
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO   90%      131 ms
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO   95%      10563 ms
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO   99%      19435 ms
+[Fri Mar 29 2019 13:29:06 GMT+0800 (CST)] INFO  100%      19435 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:29:27 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:29:32 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 95.4 ms
+[Fri Mar 29 2019 13:29:37 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:29:42 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:29:47 GMT+0800 (CST)] INFO Requests: 34 (68%), requests per second: 6, mean latency: 636.3 ms
+[Fri Mar 29 2019 13:29:52 GMT+0800 (CST)] INFO Requests: 40 (80%), requests per second: 1, mean latency: 93 ms
+[Fri Mar 29 2019 13:29:57 GMT+0800 (CST)] INFO Requests: 40 (80%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:30:02 GMT+0800 (CST)] INFO Requests: 40 (80%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Total time:          38.209755764 s
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Mean latency:        763.9 ms
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO   90%      98 ms
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO   95%      246 ms
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO   99%      18488 ms
+[Fri Mar 29 2019 13:30:05 GMT+0800 (CST)] INFO  100%      18488 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:30:25 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:30:30 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 120.3 ms
+[Fri Mar 29 2019 13:30:35 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:30:40 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:30:45 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 2, mean latency: 2414.1 ms
+[Fri Mar 29 2019 13:30:50 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:30:55 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:31:00 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 3, mean latency: 858.9 ms
+[Fri Mar 29 2019 13:31:05 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:31:10 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:31:15 GMT+0800 (CST)] INFO Requests: 31 (62%), requests per second: 1, mean latency: 2733.5 ms
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Total time:          50.869331274 s
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Mean latency:        1017.1 ms
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO   90%      173 ms
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO   95%      10361 ms
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO   99%      18886 ms
+[Fri Mar 29 2019 13:31:16 GMT+0800 (CST)] INFO  100%      18886 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:31:36 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:31:41 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 2, mean latency: 60.9 ms
+[Fri Mar 29 2019 13:31:46 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:31:51 GMT+0800 (CST)] INFO Requests: 11 (22%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Total errors:        15
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Total time:          19.98203262 s
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Requests per second: 3
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Mean latency:        399.3 ms
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO   90%      54 ms
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO   95%      91 ms
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO   99%      18329 ms
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO  100%      18329 ms (longest request)
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO  100%      18329 ms (longest request)
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:31:56 GMT+0800 (CST)] INFO   429:   15 errors
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:32:17 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:32:22 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 91.3 ms
+[Fri Mar 29 2019 13:32:27 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:32:32 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:32:37 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 2, mean latency: 2181.5 ms
+[Fri Mar 29 2019 13:32:42 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:32:47 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:32:52 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Total time:          39.778441830000006 s
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Mean latency:        795.2 ms
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO   90%      106 ms
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO   95%      207 ms
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO   99%      18988 ms
+[Fri Mar 29 2019 13:32:56 GMT+0800 (CST)] INFO  100%      18988 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:33:17 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:33:22 GMT+0800 (CST)] INFO Requests: 19 (38%), requests per second: 4, mean latency: 51.5 ms
+[Fri Mar 29 2019 13:33:27 GMT+0800 (CST)] INFO Requests: 19 (38%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:33:32 GMT+0800 (CST)] INFO Requests: 19 (38%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:33:37 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 1, mean latency: 3109 ms
+[Fri Mar 29 2019 13:33:42 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:33:47 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:33:52 GMT+0800 (CST)] INFO Requests: 25 (50%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Requests: 47 (94%), requests per second: 4, mean latency: 925.6 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Total time:          40.132056183 s
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Mean latency:        802.3 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO   90%      100 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO   95%      224 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO   99%      19429 ms
+[Fri Mar 29 2019 13:33:57 GMT+0800 (CST)] INFO  100%      19429 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:34:17 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:34:22 GMT+0800 (CST)] INFO Requests: 10 (20%), requests per second: 2, mean latency: 76.9 ms
+[Fri Mar 29 2019 13:34:27 GMT+0800 (CST)] INFO Requests: 10 (20%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:34:32 GMT+0800 (CST)] INFO Requests: 10 (20%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:34:37 GMT+0800 (CST)] INFO Requests: 26 (52%), requests per second: 3, mean latency: 1160.1 ms
+[Fri Mar 29 2019 13:34:42 GMT+0800 (CST)] INFO Requests: 26 (52%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:34:47 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 3, mean latency: 665.2 ms
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Total time:          30.566346678000002 s
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Mean latency:        611 ms
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO   90%      182 ms
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO   95%      221 ms
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO   99%      17706 ms
+[Fri Mar 29 2019 13:34:48 GMT+0800 (CST)] INFO  100%      17706 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:35:08 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:13 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 1, mean latency: 96.5 ms
+[Fri Mar 29 2019 13:35:18 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:23 GMT+0800 (CST)] INFO Requests: 4 (8%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:28 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 2, mean latency: 2128.8 ms
+[Fri Mar 29 2019 13:35:33 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:38 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 2, mean latency: 936 ms
+[Fri Mar 29 2019 13:35:43 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:48 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:53 GMT+0800 (CST)] INFO Requests: 24 (48%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Total time:          49.608919424 s
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Mean latency:        991.9 ms
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO   90%      183 ms
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO   95%      10512 ms
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO   99%      19931 ms
+[Fri Mar 29 2019 13:35:58 GMT+0800 (CST)] INFO  100%      19931 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:36:18 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:36:23 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 2, mean latency: 66 ms
+[Fri Mar 29 2019 13:36:28 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:36:33 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Total time:          19.489346383 s
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Requests per second: 3
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Mean latency:        389.4 ms
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO   90%      93 ms
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO   95%      126 ms
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO   99%      16903 ms
+[Fri Mar 29 2019 13:36:37 GMT+0800 (CST)] INFO  100%      16903 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:36:58 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:37:03 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 122.4 ms
+[Fri Mar 29 2019 13:37:08 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:37:13 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:37:18 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 8, mean latency: 480.4 ms
+[Fri Mar 29 2019 13:37:23 GMT+0800 (CST)] INFO Requests: 42 (84%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Total time:          29.046891056 s
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Mean latency:        580.6 ms
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO   90%      127 ms
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO   95%      172 ms
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO   99%      16937 ms
+[Fri Mar 29 2019 13:37:27 GMT+0800 (CST)] INFO  100%      16937 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:37:47 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:37:52 GMT+0800 (CST)] INFO Requests: 7 (14%), requests per second: 1, mean latency: 90.8 ms
+[Fri Mar 29 2019 13:37:57 GMT+0800 (CST)] INFO Requests: 7 (14%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:38:02 GMT+0800 (CST)] INFO Requests: 7 (14%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:38:07 GMT+0800 (CST)] INFO Requests: 20 (40%), requests per second: 3, mean latency: 1423.4 ms
+[Fri Mar 29 2019 13:38:12 GMT+0800 (CST)] INFO Requests: 20 (40%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:38:17 GMT+0800 (CST)] INFO Requests: 29 (58%), requests per second: 2, mean latency: 1168.9 ms
+[Fri Mar 29 2019 13:38:22 GMT+0800 (CST)] INFO Requests: 29 (58%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:38:27 GMT+0800 (CST)] INFO Requests: 29 (58%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:38:32 GMT+0800 (CST)] INFO Requests: 29 (58%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Total time:          48.800411321 s
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Mean latency:        975.7 ms
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO   90%      132 ms
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO   95%      10066 ms
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO   99%      18305 ms
+[Fri Mar 29 2019 13:38:36 GMT+0800 (CST)] INFO  100%      18305 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:38:56 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:39:01 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 1, mean latency: 136.7 ms
+[Fri Mar 29 2019 13:39:06 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:39:11 GMT+0800 (CST)] INFO Requests: 3 (6%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:39:16 GMT+0800 (CST)] INFO Requests: 26 (52%), requests per second: 5, mean latency: 851.2 ms
+[Fri Mar 29 2019 13:39:21 GMT+0800 (CST)] INFO Requests: 35 (70%), requests per second: 2, mean latency: 53.6 ms
+[Fri Mar 29 2019 13:39:26 GMT+0800 (CST)] INFO Requests: 36 (72%), requests per second: 0, mean latency: 9535.1 ms
+[Fri Mar 29 2019 13:39:31 GMT+0800 (CST)] INFO Requests: 49 (98%), requests per second: 3, mean latency: 60.8 ms
+[Fri Mar 29 2019 13:39:36 GMT+0800 (CST)] INFO Requests: 49 (98%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:39:41 GMT+0800 (CST)] INFO Requests: 49 (98%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Total time:          49.556758449 s
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Requests per second: 1
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Mean latency:        990.8 ms
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO   50%      41 ms
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO   90%      171 ms
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO   95%      9535 ms
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO   99%      18746 ms
+[Fri Mar 29 2019 13:39:46 GMT+0800 (CST)] INFO  100%      18746 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:40:06 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:40:11 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 2, mean latency: 77.2 ms
+[Fri Mar 29 2019 13:40:16 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:40:21 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:40:26 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Total time:          21.768279156000002 s
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Mean latency:        435 ms
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO   90%      58 ms
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO   95%      123 ms
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO   99%      19423 ms
+[Fri Mar 29 2019 13:40:28 GMT+0800 (CST)] INFO  100%      19423 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:40:48 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Total errors:        40
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Total time:          0.8276879460000001 s
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Requests per second: 60
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Mean latency:        16.2 ms
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO   50%      2 ms
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO   90%      42 ms
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO   95%      94 ms
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO   99%      185 ms
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO  100%      185 ms (longest request)
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO  100%      185 ms (longest request)
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:40:49 GMT+0800 (CST)] INFO   429:   40 errors
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:41:09 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:41:14 GMT+0800 (CST)] INFO Requests: 41 (82%), requests per second: 8, mean latency: 52.8 ms
+[Fri Mar 29 2019 13:41:19 GMT+0800 (CST)] INFO Requests: 41 (82%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:41:24 GMT+0800 (CST)] INFO Requests: 41 (82%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:41:29 GMT+0800 (CST)] INFO Requests: 41 (82%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:41:34 GMT+0800 (CST)] INFO Requests: 41 (82%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Total time:          25.64700878 s
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Mean latency:        512.6 ms
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO   90%      83 ms
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO   95%      84 ms
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO   99%      23138 ms
+[Fri Mar 29 2019 13:41:35 GMT+0800 (CST)] INFO  100%      23138 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:41:55 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:42:00 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 2, mean latency: 67.9 ms
+[Fri Mar 29 2019 13:42:05 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:42:10 GMT+0800 (CST)] INFO Requests: 39 (78%), requests per second: 6, mean latency: 398 ms
+[Fri Mar 29 2019 13:42:15 GMT+0800 (CST)] INFO Requests: 39 (78%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:42:20 GMT+0800 (CST)] INFO Requests: 39 (78%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:42:25 GMT+0800 (CST)] INFO Requests: 39 (78%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Total time:          31.454316373 s
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Mean latency:        628.7 ms
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO   90%      95 ms
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO   95%      127 ms
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO   99%      18451 ms
+[Fri Mar 29 2019 13:42:26 GMT+0800 (CST)] INFO  100%      18451 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:42:47 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:42:52 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 2, mean latency: 110.6 ms
+[Fri Mar 29 2019 13:42:57 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:43:02 GMT+0800 (CST)] INFO Requests: 12 (24%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:43:07 GMT+0800 (CST)] INFO Requests: 39 (78%), requests per second: 5, mean latency: 683.8 ms
+[Fri Mar 29 2019 13:43:12 GMT+0800 (CST)] INFO Requests: 39 (78%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Total time:          29.68817161 s
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Mean latency:        593.4 ms
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO   50%      42 ms
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO   90%      233 ms
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO   95%      719 ms
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO   99%      16952 ms
+[Fri Mar 29 2019 13:43:17 GMT+0800 (CST)] INFO  100%      16952 ms (longest request)
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:43:37 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:43:42 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 2, mean latency: 77.9 ms
+[Fri Mar 29 2019 13:43:47 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:43:52 GMT+0800 (CST)] INFO Requests: 9 (18%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Total errors:        27
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Total time:          19.142982125 s
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Requests per second: 3
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Mean latency:        382.6 ms
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO   50%      3 ms
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO   90%      91 ms
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO   95%      129 ms
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO   99%      17604 ms
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO  100%      17604 ms (longest request)
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO  100%      17604 ms (longest request)
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:43:56 GMT+0800 (CST)] INFO   429:   27 errors
+headers: object, {"host":"172.17.0.1","user-agent":"loadtest/3.0.7","accept":"*/*","authorization":" Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A="}
+[Fri Mar 29 2019 13:44:16 GMT+0800 (CST)] INFO Requests: 0 (0%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:44:21 GMT+0800 (CST)] INFO Requests: 5 (10%), requests per second: 1, mean latency: 111.1 ms
+[Fri Mar 29 2019 13:44:26 GMT+0800 (CST)] INFO Requests: 5 (10%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:44:31 GMT+0800 (CST)] INFO Requests: 5 (10%), requests per second: 0, mean latency: 0 ms
+[Fri Mar 29 2019 13:44:36 GMT+0800 (CST)] INFO Requests: 22 (44%), requests per second: 3, mean latency: 1143.5 ms
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Target URL:          https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Max requests:        50
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Concurrency level:   1
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Agent:               keepalive
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Completed requests:  50
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Total errors:        0
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Total time:          21.163647299 s
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Requests per second: 2
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Mean latency:        422.9 ms
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO 
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO Percentage of the requests served within a certain time
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO   50%      40 ms
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO   90%      96 ms
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO   95%      142 ms
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO   99%      18767 ms
+[Fri Mar 29 2019 13:44:37 GMT+0800 (CST)] INFO  100%      18767 ms (longest request)

@@ -34,7 +34,6 @@ Options:
   
 Example:
 
-# /usr/local/bin/loadtest --insecure -n 100 -c 1 -k -m POST -H 'authorization: Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A=' -T application/json -p timeout30 'https://172.17.0.1/api/v1/namespaces/guest/actions/sleepy?blocking=true'
 
 running "sleepy" action on local OpenWhisk instance (running on localhost) with 2 payload files:
 $(basename $0) -u https://localhost -t 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP --owhome /home/sxue/openwhisk --owc-max 5 --payloads "timeout30payload1K timeout30payload100K" --action sleepy
@@ -98,22 +97,22 @@ islocal () {
   [[ -z $user && -z $ip ]] 
 }
 
-# cleanup () {
-#   echo -e "\n==============\nClean up started\n=============="
-#   sleep 1
+cleanup () {
+  echo -e "\n==============\nClean up started\n=============="
+  sleep 1
 
-#   if islocal; then
-#     docker rm -f invoker0
-#   else
-#     echo running $user@$ip "docker rm -f controller0"
-#     ssh $user@$ip "docker rm -f controller0"
-#   fi
+  if islocal; then
+    docker rm -f invoker0
+  else
+    echo running $user@$ip "docker rm -f controller0"
+    ssh $user@$ip "docker rm -f controller0"
+  fi
 
-#   sleep 1 
-#   echo -e "\n==============\nCleanup finished\n============"
-# }
+  sleep 1 
+  echo -e "\n==============\nCleanup finished\n============"
+}
 
-# # cleanup
+#cleanup
 
 # if islocal; then
 #   ansible-playbook ${ANSIBLE_HOME}/openwhisk.yml -i ${ANSIBLE_HOME}/environments/local
@@ -122,48 +121,47 @@ islocal () {
 # fi
 
 ANSIBLE_YML=${ANSIBLE_HOME}/invoker.yml
-ANSIBLE_ENV="-e skip_pull_runtimes=True"
+#ANSIBLE_ENV="-e controller_akka_provider=local"
 INVOKER_CONTAINER="invoker0"
 
 
 function updateOW {
   echo -e "\n===================\nUpdating concurrency to $1 in OW\n=========================\n"
 
-  sleep 1
-  echo -e "Running: /usr/bin/docker rm -f ${INVOKER_CONTAINER}"
-  if islocal; then
-    /usr/bin/docker rm -f ${INVOKER_CONTAINER}    
-  else
-    ssh $user@$ip "/usr/bin/docker rm -f ${INVOKER_CONTAINER}"
-  fi  
-  sleep 1
-  unit=1024
-  LIMITS="-e limit_invocations_per_minute=99999 -e limit_invocations_concurrent=99999"
-  echo -e "Running : /usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_user_memory="$[$1*$unit]m"  ${LIMITS} ${ANSIBLE_ENV}"
+  # sleep 1
+  # echo -e "Running: /usr/bin/docker rm -f ${INVOKER_CONTAINER}"
+  # if islocal; then
+  #   /usr/bin/docker rm -f ${INVOKER_CONTAINER}    
+  # else
+  #   ssh $user@$ip "/usr/bin/docker rm -f ${INVOKER_CONTAINER}"
+  # fi  
+  # sleep 1
+  # unit=256
+  # LIMITS="-e limit_invocations_per_minute=99999 -e limit_invocations_concurrent=99999"
+  # echo -e "Running : /usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_user_memory="$[$1*$unit] m"  ${LIMITS} ${ANSIBLE_ENV}"
   
-  if islocal; then
-    /usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_user_memory="$[$1*$unit]m"  ${LIMITS} ${ANSIBLE_ENV}
-  else
-    ssh $user@$ip "/usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_coreshare=$1 -e invoker_numcore=1 ${LIMITS} ${ANSIBLE_ENV}"
-  fi
+  # if islocal; then
+  #   /usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_user_memory="$[$1*$unit] m"  ${LIMITS} ${ANSIBLE_ENV}
+  # else
+  #   ssh $user@$ip "/usr/local/bin/ansible-playbook ${ANSIBLE_YML} -i ${ANSIBLE_HOME}/environments/local -e invoker_coreshare=$1 -e invoker_numcore=1 ${LIMITS} ${ANSIBLE_ENV}"
+  # fi
 
-  sleep 15
+  # sleep 15
   echo "OW concurrency updated to $1, warming up with payload $2"
 
-  echo -e "Running: /usr/local/bin/loadtest --insecure -n $requests -c $1 -k -m POST -H "authorization: $authorization" -T "application/json" -p $2 $owurl/api/v1/namespaces/guest/actions/${action}?blocking=true"
-  /usr/local/bin/loadtest --insecure -n $requests -c $1 -k -m POST -H "authorization: $authorization" -T "application/json" -p $2 "$owurl/api/v1/namespaces/guest/actions/${action}?blocking=true"
+  echo -e "Running: /usr/local/bin/loadtest --insecure -n $requests -c $1 -k -m POST -H "authorization: $authorization" -T "application/json" -p $2 $owurl/api/v1/namespaces/_/actions/${action}?blocking=true"
+  /usr/local/bin/loadtest --insecure -n $requests -c $1 -k -m POST -H "authorization: $authorization" -T "application/json" -p $2 "$owurl/api/v1/namespaces/_/actions/${action}?blocking=true"
   echo "done warming..."
   sleep 2
 }
-
 
 function runload {
   echo "running loadtest"
   date
   start=`date +%s%3N`
 
-  echo -e "Running: /usr/local/bin/loadtest --insecure -n $requests -c $lc -k -m POST -H "authorization: $authorization" -T "application/json" -p $payload $owurl/api/v1/namespaces/guest/actions/${action}?blocking=true>$tmp"
-  /usr/local/bin/loadtest --insecure -n $requests -c $lc -k -m POST -H "authorization: $authorization" -T "application/json" -p $payload "$owurl/api/v1/namespaces/guest/actions/${action}?blocking=true">$tmp
+  echo -e "Running: /usr/local/bin/loadtest --insecure -n $requests -c $lc -k -m POST -H "authorization: $authorization" -T "application/json" -p $payload $owurl/api/v1/namespaces/_/actions/${action}?blocking=true>$tmp"
+  /usr/local/bin/loadtest --insecure -n $requests -c $lc -k -m POST -H "authorization: $authorization" -T "application/json" -p $payload "$owurl/api/v1/namespaces/_/actions/${action}?blocking=true">$tmp
 
   realtotaltime=$[`date +%s%3N`-$start]
 
@@ -196,24 +194,24 @@ function runrepeats {
   done
 }
 
-for owc in `seq ${owc_initial_concurrency} $step $maxowconcurrency`
-do
-  updateOW $owc ${PAYLOADS[0]} 
-  date
-  for payload in ${PAYLOADS[@]}
-  do
-    if [[ -z $maxloadtestconcurrency ]]; then
-      #in case $maxloadtestconcurrency not set, lc == owc
-      lc=$owc
-      runrepeats 
-    else
-      for lc in `seq ${load_initial_concurrency} $step $maxloadtestconcurrency`
-      do     
-        for i in `seq 1 ${repeats}`;
-        do
-          runrepeats
-	done
-      done
-    fi
-  done
-done
+# for owc in `seq ${owc_initial_concurrency} $step $maxowconcurrency`
+# do
+   updateOW 1 ${PAYLOADS[0]} 
+#   date
+#   for payload in ${PAYLOADS[@]}
+#   do
+#     if [[ -z $maxloadtestconcurrency ]]; then
+#       #in case $maxloadtestconcurrency not set, lc == owc
+#       lc=$owc
+#       runrepeats 
+#     else
+#       for lc in `seq ${load_initial_concurrency} $step $maxloadtestconcurrency`
+#       do     
+#         for i in `seq 1 ${repeats}`;
+#         do
+#           runrepeats
+# 	done
+#       done
+#     fi
+#   done
+# done
